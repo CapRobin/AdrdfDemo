@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adrdf.test">
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 开机启动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name="com.adrdf.test.global.MyApplication"
+        android:theme="@style/AppTheme1">
+        <activity
+            android:name="com.adrdf.test.activity.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.adrdf.test.activity.FuncListActivity"
+            android:label="@string/title_func_list"></activity>
+
+        <activity android:name="com.adrdf.test.activity.BaseFragmentActivity"
+            android:label="@string/title_base"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.FloatTitleActivity"
+            android:label="@string/title_fix_title"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.SampleGridViewActivity"
+            android:label="@string/title_sample_grid_view"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.TabPagerActivity"
+            android:label="@string/title_tab_title"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.HttpActivity"
+            android:label="@string/title_http"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.AddPhotoActivity"
+            android:label="@string/title_add_photo"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.CropImageActivity"
+            android:label="@string/title_add_photo"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.BottomBarActivity"
+            android:label="@string/title_bottom_bar"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.WheelActivity"
+            android:label="@string/title_wheel"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.AlbumActivity"
+            android:label="@string/title_choose_album"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.DBActivity"
+            android:label="@string/title_db"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.ImageDownActivity"
+            android:label="@string/title_image"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.ButtonActivity"
+            android:label="@string/title_button"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.ImageViewerActivity"
+            android:label="@string/title_button"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.LetterFilterListActivity"
+            android:label="@string/title_letter_filter"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.WebCameraActivity"
+            android:label="@string/title_web_camera"></activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.CaptureActivity"
+            android:configChanges="keyboardHidden|orientation"
+            >
+        </activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.RecoderCameraActivity"
+            android:configChanges="keyboardHidden|orientation">
+        </activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.DragGridViewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_drag_grid_view">
+        </activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.PullToRefreshActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_pull_to_refresh">
+        </activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.PullToRefreshViewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_pull_to_refresh">
+        </activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.PullToRefreshListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_pull_to_refresh">
+        </activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.PullToRefreshGridActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_pull_to_refresh">
+        </activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.AnalogClockActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_clock">
+        </activity>
+
+        <activity
+            android:name="com.adrdf.test.activity.FloatTabActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_float_tab">
+        </activity>
+
+        <!-- 桌面时钟插件 -->
+        <receiver android:name="com.adrdf.test.desktop.ClockWidget" >
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_clock" />
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

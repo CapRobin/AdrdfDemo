@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/activity_bar" />
+
+    <Button
+        android:id="@+id/mSampleView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:textColor="@color/gray_content"
+        android:background="@drawable/button_white_blue_stroke"
+        android:text="普通View下拉刷新" />
+
+    <Button
+        android:id="@+id/mListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:textColor="@color/gray_content"
+        android:background="@drawable/button_white_blue_stroke"
+        android:text="ListView下拉刷新分页" />
+
+    <Button
+        android:id="@+id/mGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:textColor="@color/gray_content"
+        android:background="@drawable/button_white_blue_stroke"
+        android:text="GridView下拉刷新分页" />
+
+</LinearLayout>

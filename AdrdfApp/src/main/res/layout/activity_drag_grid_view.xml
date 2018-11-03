@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/activity_bar" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2000dip"
+            android:orientation="vertical"
+            android:layout_margin="10dip">
+
+
+            <com.adrdf.base.view.draggrid.RdfDragGridView
+                android:id="@+id/drag_grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:gravity="center"
+                android:horizontalSpacing="5dip"
+                android:numColumns="3"
+                android:scrollbars="vertical"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dip"
+                android:listSelector="@android:color/transparent"
+                android:background="@drawable/bg_rect_white_translucent"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:background="@drawable/button_blue"
+                android:text="上传" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1000dip"
+                android:gravity="center"
+                android:text="测试ScrollView的事件影响" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

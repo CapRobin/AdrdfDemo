@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/activity_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/bg_text_gray"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="年月日选择"
+                            android:paddingBottom="8dip"
+                            android:paddingLeft="5dip"
+                            android:paddingTop="10dip"
+                            android:textColor="@color/gray"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/text_value_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dip"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:gravity="center_vertical|right"
+                            android:paddingRight="10dip"
+                            android:singleLine="true"
+                            android:textColor="@color/gray"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/gray_line"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="年/月日时分选择"
+                            android:paddingBottom="8dip"
+                            android:paddingLeft="5dip"
+                            android:paddingTop="10dip"
+                            android:textColor="@color/gray"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/text_value_2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dip"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:gravity="center_vertical|right"
+                            android:paddingRight="10dip"
+                            android:singleLine="true"
+                            android:textColor="@color/gray"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/gray_line"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="时分选择"
+                            android:paddingBottom="8dip"
+                            android:paddingLeft="5dip"
+                            android:paddingTop="10dip"
+                            android:textColor="@color/gray"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/text_value_3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dip"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:gravity="center_vertical|right"
+                            android:paddingRight="10dip"
+                            android:singleLine="true"
+                            android:textColor="@color/gray"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout04"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/bg_text_gray"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="数值"
+                            android:paddingBottom="8dip"
+                            android:paddingLeft="5dip"
+                            android:paddingTop="10dip"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/text_value_4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dip"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:gravity="center_vertical|right"
+                            android:maxLength="20"
+                            android:paddingRight="80dip"
+                            android:singleLine="true"
+                            android:textColor="@color/gray"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="70dip"
+                            android:layout_height="45dip"
+                            android:layout_alignParentRight="true"
+                            android:paddingBottom="8dip"
+                            android:paddingRight="5dip"
+                            android:paddingTop="10dip"
+                            android:text="单位"
+                            android:textColor="@color/gray"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/gray_line"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="文本选择"
+                            android:paddingBottom="8dip"
+                            android:paddingLeft="5dip"
+                            android:paddingTop="10dip"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/text_value_5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dip"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:gravity="center_vertical|right"
+                            android:maxLength="20"
+                            android:paddingRight="80dip"
+                            android:singleLine="true"
+                            android:textColor="@color/gray"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

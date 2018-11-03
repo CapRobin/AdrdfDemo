@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/activity_bar" />
+
+    <com.adrdf.base.view.refresh.RdfPullToRefreshView
+        android:id="@+id/mPullRefreshView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/gray_bg">
+
+        <GridView
+            android:id="@+id/mGridView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:horizontalSpacing="5dip"
+            android:numColumns="3"
+            android:verticalSpacing="5dip" />
+
+    </com.adrdf.base.view.refresh.RdfPullToRefreshView>
+</LinearLayout>

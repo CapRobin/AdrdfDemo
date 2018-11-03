@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/gray_bg">
+
+
+    <include
+        layout="@layout/activity_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/all_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/list_item_selector_default"
+        android:padding="10dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:text="刷新"
+        android:textColor="@color/gray_content"
+        android:textColorHint="@color/gray_light"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="true">
+
+        <com.adrdf.base.view.letterlist.RdfLetterFilterTwoListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.adrdf.base.view.letterlist.RdfLetterFilterTwoListView>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

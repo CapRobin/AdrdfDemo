@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/activity_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/insertBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:textColor="@color/gray_content"
+                        android:background="@drawable/button_orange"
+                        android:text="插入" />
+
+                    <Button
+                        android:id="@+id/queryBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:textColor="@color/gray_content"
+                        android:background="@drawable/button_gray"
+                        android:text="查询" />
+
+                    <Button
+                        android:id="@+id/deleteBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:textColor="@color/gray_content"
+                        android:background="@drawable/button_red"
+                        android:text="删除" />
+
+                    <Button
+                        android:id="@+id/clearBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_yellow"
+                        android:text="清空表" />
+
+                    <Button
+                        android:id="@+id/clearScreenBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:background="@drawable/button_green"
+                        android:text="清屏" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/resultData"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dip" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

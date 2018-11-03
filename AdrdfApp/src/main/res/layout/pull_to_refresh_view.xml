@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        layout="@layout/activity_bar" />
+
+    <com.adrdf.base.view.refresh.RdfPullToRefreshView
+        android:id="@+id/mPullRefreshView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ScrollView
+            android:id="@+id/mScrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000">
+
+            <TextView
+                android:id="@+id/mTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="下拉看看吧"
+                android:textSize="15sp" />
+        </ScrollView>
+
+    </com.adrdf.base.view.refresh.RdfPullToRefreshView>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/activity_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="10dip">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_dark">
+
+                <ImageView
+                    android:id="@+id/image_view_3"
+                    android:layout_width="300dip"
+                    android:layout_height="200dip"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/text_view_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dip"
+                    android:text="大尺寸图"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dip"
+                    android:text="View Size: 300x200"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dip">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/gray_dark">
+
+                    <ImageView
+                        android:id="@+id/image_view_2"
+                        android:layout_width="180dip"
+                        android:layout_height="120dip"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/text_view_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="5dip"
+                        android:text="小尺寸图"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="5dip"
+                        android:text="View Size: 180x120"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:background="@color/gray_dark">
+
+
+                    <ImageView
+                        android:id="@+id/image_view_1"
+                        android:layout_width="180dip"
+                        android:layout_height="120dip"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitCenter" />
+
+
+                    <TextView
+                        android:id="@+id/text_view_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="5dip"
+                        android:text="实际尺寸图"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="5dip"
+                        android:text="View Size: 180x120"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

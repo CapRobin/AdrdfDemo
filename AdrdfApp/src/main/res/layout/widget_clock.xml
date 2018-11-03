@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/clock_wall"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+<!--    <com.adrdf.library.view.scene.AbAnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dialDrawable="@drawable/clock_dial"
+        app:hourDrawable="@drawable/clock_hour"
+        app:minuteDrawable="@drawable/clock_minute"
+        app:secondDrawable="@drawable/clock_second"
+        >
+    </com.adrdf.library.view.scene.AbAnalogClock>-->
+
+</LinearLayout>

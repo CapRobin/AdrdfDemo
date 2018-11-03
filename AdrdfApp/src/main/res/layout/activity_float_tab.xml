@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/notification_height"
+        android:background="@color/gray_bg">
+
+        <com.adrdf.base.view.refresh.RdfPullToRefreshView
+            android:id="@+id/mPullRefreshView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+        <com.adrdf.base.view.sample.RdfScrollListView
+            android:id="@+id/mListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/gray_line"
+            android:dividerHeight="1px" />
+
+        </com.adrdf.base.view.refresh.RdfPullToRefreshView>
+
+
+        <LinearLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_bar_bg"
+                app:tabBackground="@null"
+                app:tabIndicatorColor="@color/blue_light"
+                app:tabIndicatorHeight="1dp"
+                app:tabSelectedTextColor="@color/blue_light" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

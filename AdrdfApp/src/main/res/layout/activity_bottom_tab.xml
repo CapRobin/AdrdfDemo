@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/activity_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+            <com.adrdf.base.view.sample.RdfViewPager
+                android:id="@+id/view_paper"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_bar_bg"
+                app:tabIndicatorColor="@android:color/white"
+                app:tabIndicatorHeight="1dp"
+                app:tabSelectedTextColor="@android:color/white"
+                app:tabBackground="@null"/>
+
+        </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

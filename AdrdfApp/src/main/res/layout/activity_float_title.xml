@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/notification_height"
+        android:background="@color/gray_bg">
+
+        <com.adrdf.base.view.sample.RdfScrollView
+            android:id="@+id/index_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1200dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="300dip"
+                    android:text="我是内容,滑动看看"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </com.adrdf.base.view.sample.RdfScrollView>
+
+        <LinearLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            android:background="@color/blue_light">
+
+            <RelativeLayout
+                android:id="@+id/search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/bg_rect_white">
+
+                <TextView
+                    android:id="@+id/city_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dip"
+                    android:drawablePadding="6dip"
+                    android:drawableRight="@drawable/ic_drop_down"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxEms="4"
+                    android:maxLines="1"
+                    android:text="南京"
+                    android:textColor="@color/gray_content"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/line_text"
+                    android:layout_width="1dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@+id/city_text"
+                    android:background="@color/gray_line" />
+
+                <RelativeLayout
+                    android:id="@+id/search_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_toRightOf="@+id/line_text"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/search_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_search"
+                        android:drawablePadding="6dip"
+                        android:gravity="center_vertical"
+                        android:hint="请输入感兴趣的内容"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:textColor="@color/gray_content"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/letter_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/letter_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_light"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="8.0dip"
+            android:text="热门城市"
+            android:textColor="@color/blue_light"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_text_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip">
+
+        <TextView
+            android:id="@+id/item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="南京"
+            android:textColor="@color/gray_content"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

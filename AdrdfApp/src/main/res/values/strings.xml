@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AdRdfDemo</string>
+    <string name="action_about">关于</string>
+
+    <string name="title_func_list">功能列表</string>
+
+    <string name="title_base">Base Activity Fragment</string>
+    <string name="title_fix_title">浮动标题栏</string>
+    <string name="title_sample_grid_view">AbSampleGirdView</string>
+    <string name="title_tab_title">滑动选项卡</string>
+    <string name="title_http">HTTP工具类</string>
+    <string name="title_add_photo">图像选择器</string>
+    <string name="title_choose_album">相册选择器</string>
+    <string name="title_bottom_bar">底部TAB切换</string>
+    <string name="title_wheel">轮子选择器</string>
+    <string name="title_image">图片下载显示</string>
+    <string name="title_db">Sqlite DB ORM</string>
+    <string name="title_button">内置的Button样式</string>
+    <string name="title_letter_filter">字母筛选</string>
+    <string name="title_web_camera">拍照，录像</string>
+    <string name="title_drag_grid_view">拖拽GridView</string>
+    <string name="title_pull_to_refresh">下拉刷新</string>
+    <string name="title_clock">漂亮时钟</string>
+    <string name="title_float_tab">浮动tab</string>
+
+</resources>

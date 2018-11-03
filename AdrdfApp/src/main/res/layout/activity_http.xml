@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/activity_bar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/gray_bg">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:padding="20dip" >
+
+                <Button
+                    android:id="@+id/getBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:textColor="@color/gray_content"
+                    android:background="@drawable/button_white_blue_stroke"
+                    android:text="get请求" />
+
+                <Button
+                    android:id="@+id/getCacheBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:textColor="@color/gray_content"
+                    android:background="@drawable/button_white_green_stroke"
+                    android:text="带缓存的get请求" />
+
+                <Button
+                    android:id="@+id/postBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:textColor="@color/gray_content"
+                    android:background="@drawable/button_white_yellow_stroke"
+                    android:text="post请求" />
+
+                <Button
+                    android:id="@+id/byteBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:textColor="@color/gray_content"
+                    android:background="@drawable/button_white_gray_stroke"
+                    android:text="返回byte[]" />
+
+                <Button
+                    android:id="@+id/fileBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:textColor="@color/gray_content"
+                    android:background="@drawable/button_white_orange_stroke"
+                    android:text="下载File " />
+
+                <Button
+                    android:id="@+id/fileUploadBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:textColor="@color/gray_content"
+                    android:background="@drawable/button_white_red_stroke"
+                    android:text="多File上传" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="1000dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="2dip"
+            android:background="@color/gray_bg">
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="80dip"
+                android:layout_height="40dip"
+                android:layout_margin="2dip"
+                android:background="@drawable/button_white_gray_stroke"
+                android:text="取消"
+                android:textColor="@color/gray_content" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/okBtn"
+                android:layout_width="80dip"
+                android:layout_height="40dip"
+                android:layout_margin="2dip"
+                android:background="@drawable/button_white_blue_stroke"
+                android:text="确定"
+                android:textColor="@color/gray_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mWheelView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@android:color/white">
+
+            <com.adrdf.base.view.wheel.RdfWheelView
+                android:id="@+id/wheelView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

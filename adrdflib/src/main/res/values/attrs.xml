@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RdfAnalogClock">
+        <attr name="dialDrawable" format="reference" />
+        <attr name="hourDrawable" format="reference" />
+        <attr name="minuteDrawable" format="reference" />
+        <attr name="secondDrawable" format="reference" />
+    </declare-styleable>
+
+</resources>
